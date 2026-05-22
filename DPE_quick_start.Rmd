@@ -1,0 +1,30 @@
+---
+title: "Diamond Price Estimator"
+author: "CLB"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Quick Start Guide
+
+The Diamond Price Estimator will provide an initial estimate of a diamond's value based upon GIA's 'Four Cs': Color, Cut, Clarity, and Carat Weight. The parameters provided by the user are applied to a data set of over 50,000 graded and priced diamonds, and a model developed relating carat weight to price for diamonds with matching cut, color, and clarity grades to yield an estimated value. We stress that this is just an initial estimate and should be confirmed by a qualified gemologist/appraiser.
+
+The application screen is divided into two parts:
+
+* Left panel, where the parameters for the estimate are selected:
+    * Carat weight
+    * Color (GIA grading scale)
+    * Clarity (GIA grading scale)
+    * Cut: Fair Good, Very Good, Premium, or Ideal
+
+* Right panel, where the results of the estimate are displayed.
+    * The upper (plot) area shows the carat weight-price pairs used to develop the model for the provided combination of Color, Cut, and Clarity. The red lines intersect at the weight of the diamond being assessed and its estimated value.
+    * The lower area provides the estimated value to the nearest multiple of $10.
+    * If the combination of parameters is outside the confidence range of the model, a caution will be displayed with the estimated value (if available).
+    
+Changes to the parameters will be reflected immediately in both the plot and estimated value.
+
