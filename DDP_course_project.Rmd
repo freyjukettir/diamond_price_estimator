@@ -76,7 +76,7 @@ http://freyjukettir.shinyapps.io/Diamond_Price_Estimator
 
 ### Project files repository at GitHub:
 
-http://github.com/freyjukettir/
+http://github.com/freyjukettir/diamond_price_estimator
 
 
 <div align="center">
